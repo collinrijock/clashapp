@@ -35,7 +35,11 @@ export interface IChampion {
 }
 
 export interface ITeamComp {
-    champions: IChampion[];
+    Top: IChampion;
+    Jungle: IChampion;
+    Mid: IChampion;
+    ADC: IChampion;
+    Support: IChampion;
 }
 
 export const getEnumKeys = (inputEnum: any) => {
