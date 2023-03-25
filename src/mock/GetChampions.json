@@ -1,0 +1,16 @@
+{
+    "Champions": [
+        {
+            "player": {
+                "summonerName": "PiXiP",
+                "name": "Felipe"
+            },
+            "role": "Top",
+            "winrate": "0.50",
+            "tags": [
+                "Tank",
+                "cc"
+            ]
+        }
+    ]
+}
