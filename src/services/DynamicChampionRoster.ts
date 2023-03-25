@@ -32,11 +32,11 @@ const getTeamCompFromChampionData = (championData: IChampion[]): ITeamComp => {
     return acc;
   }, new Map<Roles, IChampion>())
   return {
-    Top: championMapping.get(Roles.Top),
-    Jungle: championMapping.get(Roles.Jungle),
-    Mid: championMapping.get(Roles.Mid),
-    ADC: championMapping.get(Roles.ADC),
-    Support: championMapping.get(Roles.Support)
+    Top: championMapping.get(Roles.Top)!,
+    Jungle: championMapping.get(Roles.Jungle)!,
+    Mid: championMapping.get(Roles.Mid)!,
+    ADC: championMapping.get(Roles.ADC)!,
+    Support: championMapping.get(Roles.Support)!
   }
 }
 
@@ -45,11 +45,6 @@ const getRankingForRole = (
   role: Roles
 ): IChampionRanking[] => {
   return championData.map((champion: IChampion, i: number) => {return {champion: champion, rank: i}})
-}
-
-const getTeamCompFromRoleMap = (roleMapRanking: Map<Roles, IChampion>): ITeamComp => {
-  return Array.from(roleMapRanking.keys()).map(key => {
-  })
 }
 
 interface IChampionRanking {
